@@ -87,6 +87,10 @@ img {
 
 }
 
+.title {
+	padding-top: 25px;
+}
+
 .title,
 .primary-title,
 .secondary-title,
@@ -142,9 +146,9 @@ li {
 		margin-bottom: 0;
 	}
 
-  	body {
+  	/* body {
   		padding-top: 200px; 
-	}
+	} */
 
 	.profile-image {
 		float: right;
@@ -159,11 +163,9 @@ li {
 	}
 
   	.main-header {
-    	position: fixed;
     	background: #fff;
     	box-shadow: 0 1px 4px rgba(0,0,0,.4);
     	width: 100%;
-    	top: 0;
     	z-index: 1000;
 	}
 
