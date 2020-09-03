@@ -13,6 +13,7 @@ body {
 }
 
 p {
+	font-family: 'Krona', sans-serif;
 	font-size: .7em;
 	margin-bottom: 1.8em;
 	text-align: center;
@@ -50,6 +51,7 @@ img {
 
 
 .name {
+	font-family: 'Frijole', cursive;
 	font-size: 1.25em;
 	margin: 0;
 	padding: .95em .95em;
@@ -58,6 +60,7 @@ img {
 
 .main-nav {
 	margin-top: 5px;
+	padding-top: .5em;
 }
 
 .name a,
@@ -88,8 +91,11 @@ img {
 .primary-title,
 .secondary-title,
 .tertiary-title,
-.main-footer {
+.main-footer,
+li {
 	text-align: center;
+	font-family: 'Frijole', cursive;
+	font-size: 1em;
 }
 
 
@@ -143,6 +149,13 @@ img {
 	.profile-image {
 		position: absolute;
 		top: 0;
+		bottom: 100px;
+		right: 0;
+	}
+
+	.profile-text {
+		position: absolute;
+		bottom: 0;
 		right: 0;
 	}
 
