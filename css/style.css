@@ -21,6 +21,12 @@ p {
 
 ul {
 	list-style-type: none;
+	padding-left: 0;
+}
+
+h1,
+.main-nav {
+	text-align: center;
 }
 
 h2,
@@ -37,6 +43,12 @@ a {
 	text-decoration: none;
 }
 
+nav {
+	font-weight: 400;
+	letter-spacing: .05em;
+	padding: 25px;
+}
+
 img {
 	max-width: 100%;
 }
@@ -49,6 +61,10 @@ img {
 
 /* ---- Navigation ---- */
 
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
 
 .name {
 	font-family: 'Frijole', cursive;
@@ -87,6 +103,15 @@ img {
 
 }
 
+.marketing,
+.search,
+.travel,
+.map,
+.photo,
+.calc {
+	max-height: 360px;
+}
+
 .title {
 	padding-top: 25px;
 }
@@ -106,7 +131,7 @@ li {
 .profile-image {
 	width: 214px;
 	height: 100px;
-	margin-top: 60px;
+	padding-left: 50px;
 	margin-right: 25px;
 }
 
