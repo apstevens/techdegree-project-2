@@ -7,21 +7,14 @@
 }
 
 body {
-	font-family: 'Krona', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
-	background-color: ivory;
 }
 
 p {
-	font-size: .725em;
-	text-align: center;
-	line-height: 1.5em;
-	padding: 0 15px 15px;
-}
-
-ul {
-	padding-right: 40px;
+	font-size: .95em;
+	margin-bottom: 1.8em;
 }
 
 h2,
@@ -46,12 +39,24 @@ a {
 
 img {
 	max-width: 100%;
-	display: block;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin: 0;
 }
 
+figure {
+	margin: 0;
+	line-height: 0;
+  position: relative;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+  	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+}
 
 /* ================================= 
   Base Layout Styles
@@ -62,74 +67,77 @@ img {
 .name {
 	font-size: 1.25em;
 	margin: 0;
-	padding-top: 25px;
 }
 
 .main-nav {
 	margin-top: 5px;
 }
 
-.name a,
-.main-nav a {
-	display: block;
-	text-align: center;
-	padding: 10px 15px;
-}
+	.name a,
+	.main-nav a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+	}
+	
+	.main-nav a {
+		font-size: .95em;
+		color: #3acec2;
+		text-transform: uppercase;
+	}
 
-.main-nav a {
-	font-size: .95em;
-	color: cornflowerblue;
-	text-transform: uppercase;
-}
-
-.profile-image {
-	width: 200px;
-}
-
-.main-nav a:hover {
-	color: #093a58;
-}
-
-
-.main-nav li {
-	border: 1px solid lightgray;
-	margin-bottom: 10px;
-	background: #fff;
-	list-style-type: none;
-}
-
+	.main-nav a:hover {
+		color: #093a58;
+	}
 
 /* ---- Layout Containers ---- */
-.main-footer {
-	text-align: center;
-	background: #d9e4ea;
-	padding: 2em 0;
-	margin-top: 30px;
-	box-shadow: 0 0 4px lightgray;
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
 
-/* ---- Page Elements ---- */
-
-.marketing,
-.search,
-.travel,
-.map,
-.photo,
-.calc {
-	padding-bottom: 25px;
-	text-align: center;
-	width: 200px;
-}
-
-.main-header,
 .title,
 .primary-title,
 .secondary-title,
 .tertiary-title,
-.quarternary-title,
-.quinary-title,
-.senary-title {
+.main-footer {
 	text-align: center;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+}
+
+.profile-image {
+	width: 214px;
+	height: 100px;
+	margin-top: 60px;
+	margin-right: 25px;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
 }
 
 
@@ -139,73 +147,40 @@ img {
 
 @media (min-width: 769px) {
 
- .main-header {
-	 text-align: center;
- }
+	.col {
+		float: left;
+		width: calc(50% - 20px);
+		margin-bottom: 0;
+	}
 
- .main-nav {
-	display: inline-block;
-	margin-top: 0;
-	line-height: 1.5;
- }
+  	body {
+  		padding-top: 150px; 
+	}
 
- .name {
-	 padding-top: 30px;
-	 margin-top: 0;
-	 line-height: 1.4;
- }
+	.profile-image {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 
- .main-nav li {
-	 display: inline-block;
-	 padding-right: 20px;
- }
-
- .container {
-	 width: 100%;
- }
-
- .col {
-	 min-height: 500px;
-	 width: 40%;
-	 padding: 0 0.5em;
- }
-
- .profile-image {
-	 float: right;
-	 width: 50%;
-	 margin-top: 0;
- }
-
- .container p {
-	 width: 50%;
-	 float: left;
-	 padding-top: 50px;
- }
-
-}
-
-@media (min-width: 1025px) {
-
-	.main-header {
-    position: fixed;
-    background: #fff;
-    box-shadow: 0 1px 4px rgba(0,0,0,.4);
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+  	.main-header {
+    	position: fixed;
+    	background: #fff;
+    	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    	width: 100%;
+    	top: 0;
+    	z-index: 1000;
+	}
 
 	.container {
 		width: 90%;
 		margin: 0 auto;
-		position: relative;
 	}
 
 	.name,
 	.col {
 		float: left;
 	}
-
 
 	.main-nav {
 		float: right;
@@ -215,33 +190,31 @@ img {
 		display: inline-block;
 		margin-left: 15px;
 	}
+
+	.tagline {
+		font-size: 1.4em;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	.col {
+		width: calc(33.33% - 20px);
+	}
 	
 	.container {
 		width: 80%;
-		margin: 0 auto;
 		max-width: 1150px;
 	}
-
-	.primary,
-	.secondary,
-	.tertiary,
-	.quarternary,
-	.quinary,
-	.senary {
-		width: 33.33%;
-	}
-
-	.marketing,
-	.search,
-	.travel,
-	.map,
-	.photo,
-	.calc {
-		width: 200px;
-		margin: 0;
-	}
-
-		/* ---- Float clearfix ---- */
 
 	.clearfix::after {
 		content: " ";
