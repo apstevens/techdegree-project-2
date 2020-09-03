@@ -143,20 +143,19 @@ li {
 	}
 
   	body {
-  		padding-top: 150px; 
+  		padding-top: 200px; 
 	}
 
 	.profile-image {
-		position: absolute;
-		top: 0;
-		bottom: 100px;
-		right: 0;
+		float: right;
+		margin: 0;
+		margin-left: 35px;
 	}
 
 	.profile-text {
-		position: absolute;
-		bottom: 0;
-		right: 0;
+		margin: 0;
+		margin-right: 35px;
+		font-size: 14px;
 	}
 
   	.main-header {
