@@ -84,22 +84,23 @@ img {
 .name {
 	font-family: 'Frijole', cursive;
 	font-size: 1.25em;
-	margin: 0;
+	padding-top: 25px;
+	/* margin: 0;
 	padding: .95em .95em;
-	text-align: center;
+	text-align: center; */
 }
 
-.main-nav {
+/* .main-nav {
 	margin-top: 5px;
 	padding-top: .5em;
-}
+} */
 
-.name a,
+/* .name a,
 .main-nav a {
 	display: block;
 	text-align: center;
 	padding: 10px 15px;
-}
+} */
 
 .main-nav a {
 	font-size: .95em;
