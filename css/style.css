@@ -177,6 +177,46 @@ li {
 	margin-top: 30px;
 }
 
+footer .name,
+.footer-nav a {
+	font-size: .95em;
+}
+
+footer .name {
+	text-align: left;
+	float: left;
+	width: initial;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-nav .full {
+	display: none;
+}
+
+.footer-nav {
+	text-align: right;
+}
+
+.footer-nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.footer-nav .top,
+.footer-nav li:last-child {
+	margin-right: 0;
+}
+
+.footer-nav a {
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.footer-nav a:hover {
+	color: #093a58;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -230,6 +270,14 @@ li {
 
 	.main-nav li:last-child {
 		margin-right: 0;
+	}
+
+	.footer-nav .top {
+		display: none;
+	}
+
+	.footer-nav .full {
+		display: inline-block;
 	}
 
 	/* ---- Float clearfix ---- */
