@@ -15,9 +15,9 @@ body {
 
 p {
 	font-family: 'Krona', sans-serif;
-	font-size: .7em;
+	font-size: 1em;
 	margin-bottom: 1.8em;
-	text-align: center;
+	text-align: justify;
 }
 
 ul {
@@ -51,7 +51,7 @@ nav {
 }
 
 h1,
-main.nav li {
+.main.nav li {
 	width: 100%;
 }
 
@@ -117,6 +117,13 @@ img {
 .main-header {
 	padding: .5em 0;
 
+}
+
+.main-footer,
+.footer-title,
+.footer-text,
+.contact-details {
+	text-align: center;
 }
 
 .marketing,
@@ -245,7 +252,6 @@ li {
 	}
 
 	.main-nav {
-		float: right;
 		text-align: right;
 	
 	}
@@ -259,10 +265,5 @@ li {
 		max-width: 1150px;
 	}
 
-	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
 
 }
