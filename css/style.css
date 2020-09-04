@@ -17,7 +17,6 @@ p {
 	font-family: 'Krona', sans-serif;
 	font-size: 1em;
 	margin-bottom: 1.8em;
-	text-align: justify;
 }
 
 ul {
@@ -114,6 +113,21 @@ img {
 
 /* ---- Layout Containers ---- */
 
+	.main-header {
+    	background: #fff;
+    	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    	width: 100%;
+    	z-index: 1000;
+	}
+
+	.main-footer {
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		padding-top: 25px;
+	}
+
+
 .main-header {
 	padding: .5em 0;
 
@@ -168,14 +182,6 @@ li {
 	padding-right: 1em;
 	padding-left: 1em;
 }
-
-/* .main-footer {
-	background: #fff;
-    box-shadow: 0 1px 4px rgba(0,0,0,.4);
-    width: 100%;
-	padding: .5em 0;
-	margin-top: 30px;
-} */
 
 footer .name,
 .footer-nav a {
@@ -237,14 +243,6 @@ footer .name {
 		float: right;
 		margin: 0;
 		margin-left: 35px;
-	}
-
-
-  	.main-header {
-    	background: #fff;
-    	box-shadow: 0 1px 4px rgba(0,0,0,.4);
-    	width: 100%;
-    	z-index: 1000;
 	}
 
 	.container {
